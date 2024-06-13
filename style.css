@@ -12,6 +12,9 @@ biv{
     display: grid;
     background-color: #fff6d2;
 }
+h2{
+    background-color: yellow;
+}
 li{
     color: blue;
 }
