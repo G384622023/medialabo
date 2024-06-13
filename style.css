@@ -1,5 +1,14 @@
 div{
-    display: flex;
+    display: grid;
     width: 800px;
     border: 10px solid black;
+}
+a:link {
+    color: blue;
+}
+a:visited {
+    color: purple;
+}
+a:hover {
+    text-decoration: none;
 }
