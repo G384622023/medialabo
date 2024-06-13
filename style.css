@@ -9,9 +9,11 @@ biv{
 }
 h2{
     background-color: #faff6b;
+    width: 500px;
 }
 h3{
     background-color: #ffd930;
+    width: 500px;
 }
 li{
     color: blue;
