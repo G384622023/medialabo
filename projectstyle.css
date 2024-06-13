@@ -3,10 +3,13 @@ div{
     font-style: italic;
     background-color: skyblue;
 }
-civ{
-    display: grid;
+.midashi{
     background-color: #b8e0ff;
 }
 .special{
     font-weight: bold;
+}
+civ{
+    display: grid;
+    background-color: #d4edff;
 }

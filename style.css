@@ -3,17 +3,15 @@ div{
     width: 500px;
     background-color: #ffefaf;
 }
-civ{
-    display: grid;
-    width: 500px;
-    background-color: #ffde4d;
-}
 biv{
     display: grid;
     background-color: #fff6d2;
 }
 h2{
-    background-color: yellow;
+    background-color: #faff6b;
+}
+h3{
+    background-color: #ffd930;
 }
 li{
     color: blue;
