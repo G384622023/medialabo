@@ -3,6 +3,9 @@ div{
     font-style: italic;
     background-color: skyblue;
 }
+.special{
+    font-weight: bold;
+}
 li{
     background-color: #88cbff;
 }
