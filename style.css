@@ -1,8 +1,5 @@
-div#zentai{
+div{
     display: flex;
-    flex-direction: column;
-
-    width: 500px;
-    border: 1px solid gray;
-    padding: 5px 5px 5px 0;
+    width: 800px;
+    border: 10px solid black;
 }
