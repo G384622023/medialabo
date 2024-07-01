@@ -202,60 +202,91 @@ let data = {
 /////////// 課題3-2 ここからプログラムを書こう
 
 let div = document.querySelector('div#result');
+
+let p100 = document.createElement('p');
+p100.textContent = 'グルメ情報（検索結果は2件）';
+div.insertAdjacentElement('beforeend',p100);
+
+let p101 = document.createElement('p');
+p101.textContent = '検索結果1件目';
+div.insertAdjacentElement('beforeend',p101);
+
 let p1 = document.createElement('p');
 p1.textContent = '名前:'+data.results.shop[0].name;
+div.insertAdjacentElement('beforeend',p1);
+
 let p2 = document.createElement('p');
 p2.textContent = 'アクセス:'+data.results.shop[0].access;
+div.insertAdjacentElement('beforeend',p2);
+
 let p3 = document.createElement('p');
 p3.textContent = '住所:'+data.results.shop[0].address;
+div.insertAdjacentElement('beforeend',p3);
+
 let p4 = document.createElement('p');
 p4.textContent = '予算:'+data.results.shop[0].budget.name;
+div.insertAdjacentElement('beforeend',p4);
+
 let p5 = document.createElement('p');
 p5.textContent = 'キャッチコピー:'+data.results.shop[0].catch;
+div.insertAdjacentElement('beforeend',p5);
+
 let p6 = document.createElement('p');
 p6.textContent = 'ジャンル:'+data.results.shop[0].genre.name;
+div.insertAdjacentElement('beforeend',p6);
+
 let p7 = document.createElement('p');
 p7.textContent = '営業時間:'+data.results.shop[0].open;
+div.insertAdjacentElement('beforeend',p7);
+
 let p8 = document.createElement('p');
 p8.textContent = '最寄駅:'+data.results.shop[0].station_name;
+div.insertAdjacentElement('beforeend',p8);
+
 let p9 = document.createElement('p');
 p9.textContent = 'サブジャンル:'+data.results.shop[0].sub_genre.name;
+div.insertAdjacentElement('beforeend',p9);
+
 let p10 = document.createElement('p');
 p10.textContent = '';
+div.insertAdjacentElement('beforeend',p10);
+
+let p102 = document.createElement('p');
+p102.textContent = '検索結果2件目';
+div.insertAdjacentElement('beforeend',p102);
+
 let p11 = document.createElement('p');
 p11.textContent = '名前:'+data.results.shop[1].name;
+div.insertAdjacentElement('beforeend',p11);
+
 let p12 = document.createElement('p');
 p12.textContent = 'アクセス:'+data.results.shop[1].access;
+div.insertAdjacentElement('beforeend',p12);
+
 let p13 = document.createElement('p');
 p13.textContent = '住所:'+data.results.shop[1].address;
+div.insertAdjacentElement('beforeend',p13);
+
 let p14 = document.createElement('p');
 p14.textContent = '予算'+data.results.shop[1].budget.name;
+div.insertAdjacentElement('beforeend',p14);
+
 let p15 = document.createElement('p');
 p15.textContent = 'キャッチコピー:'+data.results.shop[1].catch;
+div.insertAdjacentElement('beforeend',p15);
+
 let p16 = document.createElement('p');
 p16.textContent = 'ジャンル:'+data.results.shop[1].genre.name;
+div.insertAdjacentElement('beforeend',p16);
+
 let p17 = document.createElement('p');
 p17.textContent = '営業時間:'+data.results.shop[1].open;
+div.insertAdjacentElement('beforeend',p17);
+
 let p18 = document.createElement('p');
 p18.textContent = '最寄駅:'+data.results.shop[1].station_name;
+div.insertAdjacentElement('beforeend',p18);
+
 let p19 = document.createElement('p');
 p19.textContent = 'サブジャンル:'+data.results.shop[1].sub_genre.name;
-div.insertAdjacentElement('afterend',p1);
-div.insertAdjacentElement('afterend',p2);
-div.insertAdjacentElement('afterend',p3);
-div.insertAdjacentElement('afterend',p4);
-div.insertAdjacentElement('afterend',p5);
-div.insertAdjacentElement('afterend',p6);
-div.insertAdjacentElement('afterend',p7);
-div.insertAdjacentElement('afterend',p8);
-div.insertAdjacentElement('afterend',p9);
-div.insertAdjacentElement('afterend',p10);
-div.insertAdjacentElement('afterend',p11);
-div.insertAdjacentElement('afterend',p12);
-div.insertAdjacentElement('afterend',p13);
-div.insertAdjacentElement('afterend',p14);
-div.insertAdjacentElement('afterend',p15);
-div.insertAdjacentElement('afterend',p16);
-div.insertAdjacentElement('afterend',p17);
-div.insertAdjacentElement('afterend',p18);
-div.insertAdjacentElement('afterend',p19);
+div.insertAdjacentElement('beforeend',p19);
