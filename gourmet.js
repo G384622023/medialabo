@@ -373,7 +373,7 @@ function cafe(){
   } else {
     let div = document.querySelector('div#result');
     let p = document.createElement('p');
-    p.textContent='別のワードを検索してください';
+    p.textContent='他のワードを検索してください';
     p.style.fontSize='bold';
     div.insertAdjacentElement('beforeend',p);
   }
