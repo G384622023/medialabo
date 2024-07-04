@@ -14,5 +14,6 @@ civ{
     background-color: #d4edff;
 }
 div#result{
-    background-color: #b8e0ff;
+    display: grid;
+    background-color: #d4edff;
 }

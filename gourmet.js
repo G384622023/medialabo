@@ -201,6 +201,7 @@ let data = {
 
 /////////// 課題3-2 ここからプログラムを書こう
 
+/*
 console.log('検索結果1件目');
 console.log('名前:'+data.results.shop[0].name);
 console.log('アクセス:'+data.results.shop[0].access);
@@ -224,95 +225,156 @@ console.log('ジャンル:'+data.results.shop[1].genre.name);
 console.log('営業時間:'+data.results.shop[1].open);
 console.log('最寄駅:'+data.results.shop[1].station_name);
 console.log('サブジャンル:'+data.results.shop[1].sub_genre.name);
+*/
 
 /////////// 課題4-2
 
-let div = document.querySelector('div#result');
+let b = document.querySelector('button#print');
+b.addEventListener('click', cafe);
 
-let p100 = document.createElement('p');
-p100.textContent = 'グルメ情報（検索結果は2件）';
-div.insertAdjacentElement('beforeend',p100);
+function cafe(){
+  let i = document.querySelector('input[name="kensaku"]');
+  let k = i.value;
 
-let p101 = document.createElement('li');
-p101.textContent = '検索結果1件目';
-div.insertAdjacentElement('beforeend',p101);
+  let z = "居酒屋";
 
-let p1 = document.createElement('li');
-p1.textContent = '名前:'+data.results.shop[0].name;
-div.insertAdjacentElement('beforeend',p1);
+  console.log('検索キー:'+k);
+  
+  if(z==k){
+    let div = document.querySelector('div#result');
 
-let p2 = document.createElement('li');
-p2.textContent = 'アクセス:'+data.results.shop[0].access;
-div.insertAdjacentElement('beforeend',p2);
+    let p100 = document.createElement('p');
+    p100.textContent = 'グルメ情報（検索結果は2件）';
+    div.insertAdjacentElement('beforeend',p100);
 
-let p3 = document.createElement('li');
-p3.textContent = '住所:'+data.results.shop[0].address;
-div.insertAdjacentElement('beforeend',p3);
+    let p101 = document.createElement('li');
+    p101.textContent = '・検索結果1件目';
+    p101.style.backgroundColor='#b8e0ff';
+    div.insertAdjacentElement('beforeend',p101);
 
-let p4 = document.createElement('li');
-p4.textContent = '予算:'+data.results.shop[0].budget.name;
-div.insertAdjacentElement('beforeend',p4);
+    let p1 = document.createElement('li');
+    p1.textContent = '　・名前:'+data.results.shop[0].name;
+    p1.style.fontStyle='italic';
+    p1.style.backgroundColor='skyblue';
+    div.insertAdjacentElement('beforeend',p1);
 
-let p5 = document.createElement('li');
-p5.textContent = 'キャッチコピー:'+data.results.shop[0].catch;
-div.insertAdjacentElement('beforeend',p5);
+    let p2 = document.createElement('li');
+    p2.textContent = '　・アクセス:'+data.results.shop[0].access;
+    p2.style.fontStyle='italic';
+    p2.style.backgroundColor='skyblue';
+    div.insertAdjacentElement('beforeend',p2);
 
-let p6 = document.createElement('li');
-p6.textContent = 'ジャンル:'+data.results.shop[0].genre.name;
-div.insertAdjacentElement('beforeend',p6);
+    let p3 = document.createElement('li');
+    p3.textContent = '　・住所:'+data.results.shop[0].address;
+    p3.style.fontStyle='italic';
+    p3.style.backgroundColor='skyblue';
+    div.insertAdjacentElement('beforeend',p3);
 
-let p7 = document.createElement('li');
-p7.textContent = '営業時間:'+data.results.shop[0].open;
-div.insertAdjacentElement('beforeend',p7);
+    let p4 = document.createElement('li');
+    p4.textContent = '　・予算:'+data.results.shop[0].budget.name;
+    p4.style.fontStyle='italic';
+    p4.style.backgroundColor='skyblue';
+    div.insertAdjacentElement('beforeend',p4);
 
-let p8 = document.createElement('li');
-p8.textContent = '最寄駅:'+data.results.shop[0].station_name;
-div.insertAdjacentElement('beforeend',p8);
+    let p5 = document.createElement('li');
+    p5.textContent = '　・キャッチコピー:'+data.results.shop[0].catch;
+    p5.style.fontStyle='italic';
+    p5.style.backgroundColor='skyblue';
+    p5.style.fontWeight='bold';
+    div.insertAdjacentElement('beforeend',p5);
 
-let p9 = document.createElement('li');
-p9.textContent = 'サブジャンル:'+data.results.shop[0].sub_genre.name;
-div.insertAdjacentElement('beforeend',p9);
+    let p6 = document.createElement('li');
+    p6.textContent = '　・ジャンル:'+data.results.shop[0].genre.name;
+    p6.style.fontStyle='italic';
+    p6.style.backgroundColor='skyblue';
+    div.insertAdjacentElement('beforeend',p6);
 
-let p10 = document.createElement('li');
-p10.textContent = '';
-div.insertAdjacentElement('beforeend',p10);
+    let p7 = document.createElement('li');
+    p7.textContent = '　・営業時間:'+data.results.shop[0].open;
+    p7.style.fontStyle='italic';
+    p7.style.backgroundColor='skyblue';
+    div.insertAdjacentElement('beforeend',p7);
 
-let p102 = document.createElement('li');
-p102.textContent = '検索結果2件目';
-div.insertAdjacentElement('beforeend',p102);
+    let p8 = document.createElement('li');
+    p8.textContent = '　・最寄駅:'+data.results.shop[0].station_name;
+    p8.style.fontStyle='italic';
+    p8.style.backgroundColor='skyblue';
+    div.insertAdjacentElement('beforeend',p8);
 
-let p11 = document.createElement('li');
-p11.textContent = '名前:'+data.results.shop[1].name;
-div.insertAdjacentElement('beforeend',p11);
+    let p9 = document.createElement('li');
+    p9.textContent = '　・サブジャンル:'+data.results.shop[0].sub_genre.name;
+    p9.style.fontStyle='italic';
+    p9.style.backgroundColor='skyblue';
+    div.insertAdjacentElement('beforeend',p9);
 
-let p12 = document.createElement('li');
-p12.textContent = 'アクセス:'+data.results.shop[1].access;
-div.insertAdjacentElement('beforeend',p12);
+    let p10 = document.createElement('li');
+    p10.textContent = '';
+    div.insertAdjacentElement('beforeend',p10);
 
-let p13 = document.createElement('li');
-p13.textContent = '住所:'+data.results.shop[1].address;
-div.insertAdjacentElement('beforeend',p13);
+    let p102 = document.createElement('li');
+    p102.textContent = '・検索結果2件目';
+    p102.style.backgroundColor='#b8e0ff';
+    div.insertAdjacentElement('beforeend',p102);
 
-let p14 = document.createElement('li');
-p14.textContent = '予算'+data.results.shop[1].budget.name;
-div.insertAdjacentElement('beforeend',p14);
+    let p11 = document.createElement('li');
+    p11.textContent = '　・名前:'+data.results.shop[1].name;
+    p11.style.fontStyle='italic';
+    p11.style.backgroundColor='skyblue';
+    div.insertAdjacentElement('beforeend',p11);
 
-let p15 = document.createElement('li');
-p15.textContent = 'キャッチコピー:'+data.results.shop[1].catch;
-div.insertAdjacentElement('beforeend',p15);
+    let p12 = document.createElement('li');
+    p12.textContent = '　・アクセス:'+data.results.shop[1].access;
+    p12.style.fontStyle='italic';
+    p12.style.backgroundColor='skyblue';
+    div.insertAdjacentElement('beforeend',p12);
 
-let p16 = document.createElement('li');
-p16.textContent = 'ジャンル:'+data.results.shop[1].genre.name;
-div.insertAdjacentElement('beforeend',p16);
+    let p13 = document.createElement('li');
+    p13.textContent = '　・住所:'+data.results.shop[1].address;
+    p13.style.fontStyle='italic';
+    p13.style.backgroundColor='skyblue';
+    div.insertAdjacentElement('beforeend',p13);
 
-let p17 = document.createElement('li');
-p17.textContent = '営業時間:'+data.results.shop[1].open;
-div.insertAdjacentElement('beforeend',p17);
+    let p14 = document.createElement('li');
+    p14.textContent = '　・予算'+data.results.shop[1].budget.name;
+    p14.style.fontStyle='italic';
+    p14.style.backgroundColor='skyblue';
+    div.insertAdjacentElement('beforeend',p14);
 
-let p18 = document.createElement('li');
-p18.textContent = '最寄駅:'+data.results.shop[1].station_name;
-div.insertAdjacentElement('beforeend',p18);
+    let p15 = document.createElement('li');
+    p15.textContent = '　・キャッチコピー:'+data.results.shop[1].catch;
+    p15.style.fontStyle='italic';
+    p15.style.backgroundColor='skyblue';
+    p15.style.fontWeight='bold';
+    div.insertAdjacentElement('beforeend',p15);
 
-let p19 = document.createElement('li');
-p19.textContent = 'サブジャンル:'+data.results.shop[1].sub_genre.name;
-div.insertAdjacentElement('beforeend',p19);
+    let p16 = document.createElement('li');
+    p16.textContent = '　・ジャンル:'+data.results.shop[1].genre.name;
+    p16.style.fontStyle='italic';
+    p16.style.backgroundColor='skyblue';
+    div.insertAdjacentElement('beforeend',p16);
+
+    let p17 = document.createElement('li');
+    p17.textContent = '　・営業時間:'+data.results.shop[1].open;
+    p17.style.fontStyle='italic';
+    p17.style.backgroundColor='skyblue';
+    div.insertAdjacentElement('beforeend',p17);
+
+    let p18 = document.createElement('li');
+    p18.textContent = '　・最寄駅:'+data.results.shop[1].station_name;
+    p18.style.fontStyle='italic';
+    p18.style.backgroundColor='skyblue';
+    div.insertAdjacentElement('beforeend',p18);
+
+    let p19 = document.createElement('li');
+    p19.textContent = '　・サブジャンル:'+data.results.shop[1].sub_genre.name;
+    p19.style.fontStyle='italic';
+    p19.style.backgroundColor='skyblue';
+    div.insertAdjacentElement('beforeend',p19);
+  } else {
+    let div = document.querySelector('div#result');
+    let p = document.createElement('p');
+    p.textContent='別のワードを検索してください';
+    p.style.fontSize='bold';
+    div.insertAdjacentElement('beforeend',p);
+  }
+}
