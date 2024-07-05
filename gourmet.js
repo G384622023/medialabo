@@ -240,6 +240,12 @@ function cafe(){
 
   console.log('検索キー:'+k);
   
+  let r = document.querySelectorAll('div#result>*');
+  
+  for (let i=0; i<r.length; i=i+1) {
+    r[i].remove();
+  }
+  
   if(z==k){
     let div = document.querySelector('div#result');
 
