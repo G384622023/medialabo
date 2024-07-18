@@ -1,204 +1,3 @@
-let data = {
-  "results": {
-    "api_version": "1.26",
-    "results_available": 52,
-    "results_returned": "10",
-    "results_start": 1,
-    "shop": [
-      {
-        "access": "京王八王子駅を背にし右手に見えるローソンの隣のビル、ホテルザ・ビーの2階です。",
-        "address": "東京都八王子市明神町４-6-12　ホテル・ザ・ビー八王子（旧八王子プラザホテル）2F",
-        "band": "可",
-        "barrier_free": "なし",
-        "budget": {
-          "average": "ディナー3000円",
-          "code": "B003",
-          "name": "3001～4000円"
-        },
-        "budget_memo": "",
-        "capacity": 100,
-        "card": "利用可",
-        "catch": "【サプライズ演出有】 結婚パーティー受付中",
-        "charter": "貸切可 ：VIPルーム1部屋2～15名様前後（完全個室）/パーティーフロア！50型モニター・スポットライト等充実",
-        "child": "お子様連れOK",
-        "close": "不定休有り。店休時は店長携帯電話09035324825まで問い合わせください♪",
-        "coupon_urls": {
-          "pc": "https://www.hotpepper.jp/strJ000989843/map/?vos=nhppalsa000016",
-          "sp": "https://www.hotpepper.jp/strJ000989843/scoupon/?vos=nhppalsa000016"
-        },
-        "course": "あり",
-        "english": "なし",
-        "free_drink": "あり",
-        "free_food": "なし",
-        "genre": {
-          "catch": "大人の社交場非日常を味わうダイニング",
-          "code": "G001",
-          "name": "居酒屋"
-        },
-        "horigotatsu": "なし",
-        "id": "J000989843",
-        "karaoke": "あり",
-        "ktai_coupon": 0,
-        "large_area": {
-          "code": "Z011",
-          "name": "東京"
-        },
-        "large_service_area": {
-          "code": "SS10",
-          "name": "関東"
-        },
-        "lat": 35.6585460152,
-        "lng": 139.34327231,
-        "logo_image": "https://imgfp.hotp.jp/IMGH/21/04/P038512104/P038512104_69.jpg",
-        "lunch": "なし",
-        "middle_area": {
-          "code": "Y110",
-          "name": "八王子・立川"
-        },
-        "midnight": "営業していない",
-        "mobile_access": "京王八王子駅1分/JR八王子駅北口5分",
-        "name": "バグダッドカフェ Bagdadcafe/モータウン MOTOWN",
-        "name_kana": "ばぐだっどかふぇもーたうんはちおうじ",
-        "non_smoking": "禁煙席なし",
-        "open": "月～日、祝日、祝前日: 17:00～21:00 （料理L.O. 20:00 ドリンクL.O. 20:00）",
-        "other_memo": "ステージ・マイク・カラオケ等",
-        "parking": "なし",
-        "party_capacity": 250,
-        "pet": "不可",
-        "photo": {
-          "mobile": {
-            "l": "https://imgfp.hotp.jp/IMGH/22/35/P038512235/P038512235_168.jpg",
-            "s": "https://imgfp.hotp.jp/IMGH/22/35/P038512235/P038512235_100.jpg"
-          },
-          "pc": {
-            "l": "https://imgfp.hotp.jp/IMGH/22/35/P038512235/P038512235_238.jpg",
-            "m": "https://imgfp.hotp.jp/IMGH/22/35/P038512235/P038512235_168.jpg",
-            "s": "https://imgfp.hotp.jp/IMGH/22/35/P038512235/P038512235_58_s.jpg"
-          }
-        },
-        "private_room": "あり ：VIPルーム1部屋2～15名様前後（完全個室）/パーティーフロア",
-        "service_area": {
-          "code": "SA11",
-          "name": "東京"
-        },
-        "shop_detail_memo": "ご質問、ご要望はお気軽にお問い合わせください♪",
-        "show": "あり",
-        "small_area": {
-          "code": "X220",
-          "name": "八王子"
-        },
-        "station_name": "京王八王子",
-        "sub_genre": {
-          "code": "G002",
-          "name": "ダイニングバー・バル"
-        },
-        "tatami": "なし",
-        "tv": "あり",
-        "urls": {
-          "pc": "https://www.hotpepper.jp/strJ000989843/?vos=nhppalsa000016"
-        },
-        "wedding": "大歓迎！ステージ・マイク・音響・映像等、設備充実！！最大200名様まで是非どうぞ★",
-        "wifi": "あり"
-      },
-      {
-        "access": "ＪＲ八王子駅北口徒歩1分/京王八王子駅徒歩3分",
-        "address": "東京都八王子市東町12-14",
-        "band": "不可",
-        "barrier_free": "あり ：スタッフがお手伝いさせて頂きます。ご不明な点等お気軽にお声掛け下さい。事前のお問い合わせも◎",
-        "budget": {
-          "average": "2,000円(通常平均) 3,000円(宴会平均) ",
-          "code": "B002",
-          "name": "2001～3000円"
-        },
-        "budget_memo": "",
-        "capacity": 100,
-        "card": "利用可",
-        "catch": "2.5時間飲み放題付2000円~ 【★少人数様ソファー★】",
-        "charter": "貸切可 ：八王子で人気の個室バル最大50名様まで対応できます。20名様～フロア貸切応相談　最大100名様までOK",
-        "child": "お子様連れ歓迎 ：チャイルドシートもご用意しています。お子様連れのママ会・ご家族でのご利用にもお気軽にどうぞ♪",
-        "close": "【年中無休】貸切宴会のご予約も絶賛受付中！最大100名様までご利用可能ですので、会社宴会 同窓会 宴会にオススメ♪",
-        "coupon_urls": {
-          "pc": "https://www.hotpepper.jp/strJ001275177/map/?vos=nhppalsa000016",
-          "sp": "https://www.hotpepper.jp/strJ001275177/scoupon/?vos=nhppalsa000016"
-        },
-        "course": "あり",
-        "english": "なし",
-        "free_drink": "あり ：★NEW OPEN★当店イチ押しのコース★2.5h飲み放題付き「Funny Classicコース」4980円→2980円",
-        "free_food": "あり ：★NEW OPEN★当店イチ押しのコース★2.5h飲み放題付き「Funny Classicコース」4980円→2980円",
-        "genre": {
-          "catch": "八王子 個室居酒屋 飲み放題 肉バル 女子会",
-          "code": "G001",
-          "name": "居酒屋"
-        },
-        "horigotatsu": "なし ：温かな照明と開放的な店内で楽しくご宴会♪八王子での宴会 飲み会 女子会 二次会 合コンに◎",
-        "id": "J001275177",
-        "karaoke": "なし",
-        "ktai_coupon": 0,
-        "large_area": {
-          "code": "Z011",
-          "name": "東京"
-        },
-        "large_service_area": {
-          "code": "SS10",
-          "name": "関東"
-        },
-        "lat": 35.6582259169,
-        "lng": 139.3381858122,
-        "logo_image": "https://imgfp.hotp.jp/IMGH/61/98/P038366198/P038366198_69.jpg",
-        "lunch": "なし",
-        "middle_area": {
-          "code": "Y110",
-          "name": "八王子・立川"
-        },
-        "midnight": "営業している",
-        "mobile_access": "JR八王子駅北口徒歩1分/京王八王子駅徒歩3分",
-        "name": "隠れ家バル Funny&Bouquet",
-        "name_kana": "かくれやばる　ふぁにーあんどぶーけ",
-        "non_smoking": "禁煙席なし",
-        "open": "月～日、祝日、祝前日: 17:00～翌5:00 （料理L.O. 翌3:00 ドリンクL.O. 翌4:00）",
-        "other_memo": "個室や貸切の詳細等お気軽にお電話にてお問い合わせください。八王子での飲み会に◎",
-        "parking": "なし ：お近くのコインパーキングをご利用下さい。",
-        "party_capacity": 50,
-        "pet": "不可",
-        "photo": {
-          "mobile": {
-            "l": "https://imgfp.hotp.jp/IMGH/33/59/P038703359/P038703359_168.jpg",
-            "s": "https://imgfp.hotp.jp/IMGH/33/59/P038703359/P038703359_100.jpg"
-          },
-          "pc": {
-            "l": "https://imgfp.hotp.jp/IMGH/33/59/P038703359/P038703359_238.jpg",
-            "m": "https://imgfp.hotp.jp/IMGH/33/59/P038703359/P038703359_168.jpg",
-            "s": "https://imgfp.hotp.jp/IMGH/33/59/P038703359/P038703359_58_s.jpg"
-          }
-        },
-        "private_room": "なし ：個室　2名×4室　4名×8室　8名～10名×4室　20名～40名×2室",
-        "service_area": {
-          "code": "SA11",
-          "name": "東京"
-        },
-        "shop_detail_memo": "★NEW OPEN★当店イチ押しのコース★2.5h飲み放題付き「Funny Classicコース」4980円→2980円",
-        "show": "なし",
-        "small_area": {
-          "code": "X220",
-          "name": "八王子"
-        },
-        "station_name": "八王子",
-        "sub_genre": {
-          "code": "G002",
-          "name": "ダイニングバー・バル"
-        },
-        "tatami": "なし ：八王子で人気のお座敷個室！最大50名様まで対応できます。",
-        "tv": "あり",
-        "urls": {
-          "pc": "https://www.hotpepper.jp/strJ001275177/?vos=nhppalsa000016"
-        },
-        "wedding": "八王子での結婚式の二次会や同窓会、打ち上げパーティー等多様なシーンにご利用下さい",
-        "wifi": "あり"
-      }
-    ]
-  }
-};
-
 /////////// 課題3-2 ここからプログラムを書こう
 
 /*
@@ -229,158 +28,207 @@ console.log('サブジャンル:'+data.results.shop[1].sub_genre.name);
 
 /////////// 課題4-2
 
+let z1 = "居酒屋";
+let z2 = "ダイニングバー・バル";
+let z3 = "創作料理";
+let z4 = "和食";
+let z5 = "洋食";
+let z6 = "イタリアン・フレンチ";
+let z7 = "中華";
+let z8 = "焼肉・ホルモン";
+let z9 = "アジア・エスニック料理";
+let z10 = "各国料理";
+let z11 = "カラオケ・パーティ";
+let z12 = "バー・カクテル";
+let z13 = "ラーメン";
+let z14 = "カフェ・スイーツ";
+let z15 = "その他グルメ";
+let z16 = "お好み焼き・もんじゃ";
+let z17 = "韓国料理";
+
+/*let b = document.querySelector('button#print');
+b.addEventListener('click', print);
+*/
+　
+function print(data){
+
+    let i = document.querySelector('input[name="kensaku"]');
+    let k = i.value;
+
+    console.log('検索キー:'+k);
+  
+    let r = document.querySelectorAll('div#result>*');
+  
+    for (let i=0; i<r.length; i=i+1) {
+      r[i].remove();
+    }
+  
+    if(z1==k||z2==k||z3==k||z4==k||z5==k||z6==k||z7==k||z8==k||z9==k||z10==k||z11==k||z12==k||z13==k||z14==k||z15==k||z16==k||z17==k){
+      let div = document.querySelector('div#result');
+
+      let pi00 = document.createElement('p');
+      pi00.textContent = 'グルメ情報（検索結果は'+data.results.shop.length+'件）';
+      div.insertAdjacentElement('beforeend',pi00);
+
+      for(let i=0;i<data.results.shop.length;i=i+1){  
+
+        let pi01 = document.createElement('li');
+        pi01.textContent = '・検索結果'+(i+1)+'件目';
+        pi01.style.backgroundColor='#b8e0ff';
+        div.insertAdjacentElement('beforeend',pi01);
+
+        let pi0 = document.createElement('li');
+        pi0.textContent = '　・名前:'+data.results.shop[i].name;
+        pi0.style.fontStyle='italic';
+        pi0.style.backgroundColor='skyblue';
+        div.insertAdjacentElement('beforeend',pi0);
+
+        let pi1 = document.createElement('li');
+        pi1.textContent = '　・アクセス:'+data.results.shop[i].access;
+        pi1.style.fontStyle='italic';
+        pi1.style.backgroundColor='skyblue';
+        div.insertAdjacentElement('beforeend',pi1);
+
+        let pi2 = document.createElement('li');
+        pi2.textContent = '　・住所:'+data.results.shop[i].address;
+        pi2.style.fontStyle='italic';
+        pi2.style.backgroundColor='skyblue';
+        div.insertAdjacentElement('beforeend',pi2);
+
+        let pi3 = document.createElement('li');
+        pi3.textContent = '　・予算:'+data.results.shop[i].budget.name;
+        pi3.style.fontStyle='italic';
+        pi3.style.backgroundColor='skyblue';
+        div.insertAdjacentElement('beforeend',pi3);
+
+        let pi4 = document.createElement('li');
+        pi4.textContent = '　・キャッチコピー:'+data.results.shop[i].catch;
+        pi4.style.fontStyle='italic';
+        pi4.style.backgroundColor='skyblue';
+        pi4.style.fontWeight='bold';
+        div.insertAdjacentElement('beforeend',pi4);
+
+        let pi5 = document.createElement('li');
+        pi5.textContent = '　・ジャンル:'+data.results.shop[i].genre.name;
+        pi5.style.fontStyle='italic';
+        pi5.style.backgroundColor='skyblue';
+        div.insertAdjacentElement('beforeend',pi5);
+
+        let pi6 = document.createElement('li');
+        pi6.textContent = '　・営業時間:'+data.results.shop[i].open;
+        pi6.style.fontStyle='italic';
+        pi6.style.backgroundColor='skyblue';
+        div.insertAdjacentElement('beforeend',pi6);
+
+        let pi7 = document.createElement('li');
+        pi7.textContent = '　・最寄駅:'+data.results.shop[i].station_name;
+        pi7.style.fontStyle='italic';
+        pi7.style.backgroundColor='skyblue';
+        div.insertAdjacentElement('beforeend',pi7);
+
+        let pi8 = document.createElement('li');
+        pi8.textContent = '';
+        div.insertAdjacentElement('beforeend',pi8);
+      }
+    } 
+
+}
+
 let b = document.querySelector('button#print');
-b.addEventListener('click', cafe);
+b.addEventListener('click', sendRequest);
 
-function cafe(){
-  let i = document.querySelector('input[name="kensaku"]');
-  let k = i.value;
+// 通信を開始する処理
+function sendRequest() {
+    let i = document.querySelector('input[name="kensaku"]');
+    let k = i.value;
+    // URL を設定
+    // 検索キー　ジャンル　取得
+    let genre;
+    let url = "https://www.nishita-lab.org/web-contents/jsons/hotpepper/G001.json";
+    if(z1==k){
+      genre = 'G001';
+      url = "https://www.nishita-lab.org/web-contents/jsons/hotpepper/"+genre+".json";
+    } else if(z2==k){
+      genre = 'G002';
+      url = "https://www.nishita-lab.org/web-contents/jsons/hotpepper/"+genre+".json";
+    } else if(z3==k){
+      genre = 'G003';
+      url = "https://www.nishita-lab.org/web-contents/jsons/hotpepper/"+genre+".json";
+    } else if(z4==k){
+      genre = 'G004';
+      url = "https://www.nishita-lab.org/web-contents/jsons/hotpepper/"+genre+".json";
+    } else if(z5==k){
+      genre = 'G005';
+      url = "https://www.nishita-lab.org/web-contents/jsons/hotpepper/"+genre+".json";
+    } else if(z6==k){
+      genre = 'G006';
+      url = "https://www.nishita-lab.org/web-contents/jsons/hotpepper/"+genre+".json";
+    } else if(z7==k){
+      genre = 'G007';
+      url = "https://www.nishita-lab.org/web-contents/jsons/hotpepper/"+genre+".json";
+    } else if(z8==k){
+      genre = 'G008';
+      url = "https://www.nishita-lab.org/web-contents/jsons/hotpepper/"+genre+".json";
+    } else if(z9==k){
+      genre = 'G009';
+      url = "https://www.nishita-lab.org/web-contents/jsons/hotpepper/"+genre+".json";
+    } else if(z10==k){
+      genre = 'G010';
+      url = "https://www.nishita-lab.org/web-contents/jsons/hotpepper/"+genre+".json";
+    } else if(z11==k){
+      genre = 'G011';
+      url = "https://www.nishita-lab.org/web-contents/jsons/hotpepper/"+genre+".json";
+    } else if(z12==k){
+      genre = 'G012';
+      url = "https://www.nishita-lab.org/web-contents/jsons/hotpepper/"+genre+".json";
+    } else if(z13==k){
+      genre = 'G013';
+      url = "https://www.nishita-lab.org/web-contents/jsons/hotpepper/"+genre+".json";
+    } else if(z14==k){
+      genre = 'G014';
+      url = "https://www.nishita-lab.org/web-contents/jsons/hotpepper/"+genre+".json";
+    } else if(z15==k){
+      genre = 'G015';
+      url = "https://www.nishita-lab.org/web-contents/jsons/hotpepper/"+genre+".json";
+    } else if(z16==k){
+      genre = 'G016';
+      url = "https://www.nishita-lab.org/web-contents/jsons/hotpepper/"+genre+".json";
+    } else if(z17==k){
+      genre = 'G017';
+      url = "https://www.nishita-lab.org/web-contents/jsons/hotpepper/"+genre+".json";
+    } else {
+      let div = document.querySelector('div#result');
+      let p = document.createElement('p');
+      p.textContent='他のワードを検索してください';
+      p.style.fontSize='bold';
+      div.insertAdjacentElement('beforeend',p);
+    }
 
-  let z = "居酒屋";
+    // 通信開始
+    axios.get(url)
+        .then(showResult)   // 通信成功
+        .catch(showError)   // 通信失敗
+        .then(finish);      // 通信の最後の処理
+}
 
-  console.log('検索キー:'+k);
-  
-  let r = document.querySelectorAll('div#result>*');
-  
-  for (let i=0; i<r.length; i=i+1) {
-    r[i].remove();
-  }
-  
-  if(z==k){
-    let div = document.querySelector('div#result');
+// 通信が成功した時の処理
+function showResult(resp) {
+    // サーバから送られてきたデータを出力
+    let data = resp.data;
 
-    let p100 = document.createElement('p');
-    p100.textContent = 'グルメ情報（検索結果は2件）';
-    div.insertAdjacentElement('beforeend',p100);
+    // data が文字列型なら，オブジェクトに変換する
+    if (typeof data === 'string') {
+        data = JSON.parse(data);
+    }
+    print(data);
+}
 
-    let p101 = document.createElement('li');
-    p101.textContent = '・検索結果1件目';
-    p101.style.backgroundColor='#b8e0ff';
-    div.insertAdjacentElement('beforeend',p101);
+// 通信エラーが発生した時の処理
+function showError(err) {
+    console.log(err);
+}
 
-    let p1 = document.createElement('li');
-    p1.textContent = '　・名前:'+data.results.shop[0].name;
-    p1.style.fontStyle='italic';
-    p1.style.backgroundColor='skyblue';
-    div.insertAdjacentElement('beforeend',p1);
-
-    let p2 = document.createElement('li');
-    p2.textContent = '　・アクセス:'+data.results.shop[0].access;
-    p2.style.fontStyle='italic';
-    p2.style.backgroundColor='skyblue';
-    div.insertAdjacentElement('beforeend',p2);
-
-    let p3 = document.createElement('li');
-    p3.textContent = '　・住所:'+data.results.shop[0].address;
-    p3.style.fontStyle='italic';
-    p3.style.backgroundColor='skyblue';
-    div.insertAdjacentElement('beforeend',p3);
-
-    let p4 = document.createElement('li');
-    p4.textContent = '　・予算:'+data.results.shop[0].budget.name;
-    p4.style.fontStyle='italic';
-    p4.style.backgroundColor='skyblue';
-    div.insertAdjacentElement('beforeend',p4);
-
-    let p5 = document.createElement('li');
-    p5.textContent = '　・キャッチコピー:'+data.results.shop[0].catch;
-    p5.style.fontStyle='italic';
-    p5.style.backgroundColor='skyblue';
-    p5.style.fontWeight='bold';
-    div.insertAdjacentElement('beforeend',p5);
-
-    let p6 = document.createElement('li');
-    p6.textContent = '　・ジャンル:'+data.results.shop[0].genre.name;
-    p6.style.fontStyle='italic';
-    p6.style.backgroundColor='skyblue';
-    div.insertAdjacentElement('beforeend',p6);
-
-    let p7 = document.createElement('li');
-    p7.textContent = '　・営業時間:'+data.results.shop[0].open;
-    p7.style.fontStyle='italic';
-    p7.style.backgroundColor='skyblue';
-    div.insertAdjacentElement('beforeend',p7);
-
-    let p8 = document.createElement('li');
-    p8.textContent = '　・最寄駅:'+data.results.shop[0].station_name;
-    p8.style.fontStyle='italic';
-    p8.style.backgroundColor='skyblue';
-    div.insertAdjacentElement('beforeend',p8);
-
-    let p9 = document.createElement('li');
-    p9.textContent = '　・サブジャンル:'+data.results.shop[0].sub_genre.name;
-    p9.style.fontStyle='italic';
-    p9.style.backgroundColor='skyblue';
-    div.insertAdjacentElement('beforeend',p9);
-
-    let p10 = document.createElement('li');
-    p10.textContent = '';
-    div.insertAdjacentElement('beforeend',p10);
-
-    let p102 = document.createElement('li');
-    p102.textContent = '・検索結果2件目';
-    p102.style.backgroundColor='#b8e0ff';
-    div.insertAdjacentElement('beforeend',p102);
-
-    let p11 = document.createElement('li');
-    p11.textContent = '　・名前:'+data.results.shop[1].name;
-    p11.style.fontStyle='italic';
-    p11.style.backgroundColor='skyblue';
-    div.insertAdjacentElement('beforeend',p11);
-
-    let p12 = document.createElement('li');
-    p12.textContent = '　・アクセス:'+data.results.shop[1].access;
-    p12.style.fontStyle='italic';
-    p12.style.backgroundColor='skyblue';
-    div.insertAdjacentElement('beforeend',p12);
-
-    let p13 = document.createElement('li');
-    p13.textContent = '　・住所:'+data.results.shop[1].address;
-    p13.style.fontStyle='italic';
-    p13.style.backgroundColor='skyblue';
-    div.insertAdjacentElement('beforeend',p13);
-
-    let p14 = document.createElement('li');
-    p14.textContent = '　・予算'+data.results.shop[1].budget.name;
-    p14.style.fontStyle='italic';
-    p14.style.backgroundColor='skyblue';
-    div.insertAdjacentElement('beforeend',p14);
-
-    let p15 = document.createElement('li');
-    p15.textContent = '　・キャッチコピー:'+data.results.shop[1].catch;
-    p15.style.fontStyle='italic';
-    p15.style.backgroundColor='skyblue';
-    p15.style.fontWeight='bold';
-    div.insertAdjacentElement('beforeend',p15);
-
-    let p16 = document.createElement('li');
-    p16.textContent = '　・ジャンル:'+data.results.shop[1].genre.name;
-    p16.style.fontStyle='italic';
-    p16.style.backgroundColor='skyblue';
-    div.insertAdjacentElement('beforeend',p16);
-
-    let p17 = document.createElement('li');
-    p17.textContent = '　・営業時間:'+data.results.shop[1].open;
-    p17.style.fontStyle='italic';
-    p17.style.backgroundColor='skyblue';
-    div.insertAdjacentElement('beforeend',p17);
-
-    let p18 = document.createElement('li');
-    p18.textContent = '　・最寄駅:'+data.results.shop[1].station_name;
-    p18.style.fontStyle='italic';
-    p18.style.backgroundColor='skyblue';
-    div.insertAdjacentElement('beforeend',p18);
-
-    let p19 = document.createElement('li');
-    p19.textContent = '　・サブジャンル:'+data.results.shop[1].sub_genre.name;
-    p19.style.fontStyle='italic';
-    p19.style.backgroundColor='skyblue';
-    div.insertAdjacentElement('beforeend',p19);
-  } else {
-    let div = document.querySelector('div#result');
-    let p = document.createElement('p');
-    p.textContent='他のワードを検索してください';
-    p.style.fontSize='bold';
-    div.insertAdjacentElement('beforeend',p);
-  }
+// 通信の最後にいつも実行する処理
+function finish() {
+    console.log('Ajax 通信が終わりました');
 }
