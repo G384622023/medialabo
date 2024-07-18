@@ -46,91 +46,92 @@ let z15 = "その他グルメ";
 let z16 = "お好み焼き・もんじゃ";
 let z17 = "韓国料理";
 
-/*let b = document.querySelector('button#print');
+/*
+let b = document.querySelector('button#print');
 b.addEventListener('click', print);
 */
 　
 function print(data){
 
-    let i = document.querySelector('input[name="kensaku"]');
-    let k = i.value;
+  let i = document.querySelector('input[name="kensaku"]');
+  let k = i.value;
 
-    console.log('検索キー:'+k);
+  console.log('検索キー:'+k);
   
-    let r = document.querySelectorAll('div#result>*');
+  let r = document.querySelectorAll('div#result>*');
   
-    for (let i=0; i<r.length; i=i+1) {
-      r[i].remove();
+  for (let i=0; i<r.length; i=i+1) {
+    r[i].remove();
+  }
+  
+  if(z1==k||z2==k||z3==k||z4==k||z5==k||z6==k||z7==k||z8==k||z9==k||z10==k||z11==k||z12==k||z13==k||z14==k||z15==k||z16==k||z17==k){
+    let div = document.querySelector('div#result');
+
+    let pi00 = document.createElement('p');
+    pi00.textContent = 'グルメ情報（検索結果は'+data.results.shop.length+'件）';
+    div.insertAdjacentElement('beforeend',pi00);
+
+    for(let i=0;i<data.results.shop.length;i=i+1){  
+
+      let pi01 = document.createElement('li');
+      pi01.textContent = '・検索結果'+(i+1)+'件目';
+      pi01.style.backgroundColor='#b8e0ff';
+      div.insertAdjacentElement('beforeend',pi01);
+
+      let pi0 = document.createElement('li');
+      pi0.textContent = '　・名前:'+data.results.shop[i].name;
+      pi0.style.fontStyle='italic';
+      pi0.style.backgroundColor='skyblue';
+      div.insertAdjacentElement('beforeend',pi0);
+
+      let pi1 = document.createElement('li');
+      pi1.textContent = '　・アクセス:'+data.results.shop[i].access;
+      pi1.style.fontStyle='italic';
+      pi1.style.backgroundColor='skyblue';
+      div.insertAdjacentElement('beforeend',pi1);
+
+      let pi2 = document.createElement('li');
+      pi2.textContent = '　・住所:'+data.results.shop[i].address;
+      pi2.style.fontStyle='italic';
+      pi2.style.backgroundColor='skyblue';
+      div.insertAdjacentElement('beforeend',pi2);
+
+      let pi3 = document.createElement('li');
+      pi3.textContent = '　・予算:'+data.results.shop[i].budget.name;
+      pi3.style.fontStyle='italic';
+      pi3.style.backgroundColor='skyblue';
+      div.insertAdjacentElement('beforeend',pi3);
+
+      let pi4 = document.createElement('li');
+      pi4.textContent = '　・キャッチコピー:'+data.results.shop[i].catch;
+      pi4.style.fontStyle='italic';
+      pi4.style.backgroundColor='skyblue';
+      pi4.style.fontWeight='bold';
+      div.insertAdjacentElement('beforeend',pi4);
+
+      let pi5 = document.createElement('li');
+      pi5.textContent = '　・ジャンル:'+data.results.shop[i].genre.name;
+      pi5.style.fontStyle='italic';
+      pi5.style.backgroundColor='skyblue';
+      div.insertAdjacentElement('beforeend',pi5);
+
+      let pi6 = document.createElement('li');
+      pi6.textContent = '　・営業時間:'+data.results.shop[i].open;
+      pi6.style.fontStyle='italic';
+      pi6.style.backgroundColor='skyblue';
+      div.insertAdjacentElement('beforeend',pi6);
+
+      let pi7 = document.createElement('li');
+      pi7.textContent = '　・最寄駅:'+data.results.shop[i].station_name;
+      pi7.style.fontStyle='italic';
+      pi7.style.backgroundColor='skyblue';
+      div.insertAdjacentElement('beforeend',pi7);
+
+      let pi8 = document.createElement('li');
+      pi8.textContent = '';
+      div.insertAdjacentElement('beforeend',pi8);
     }
-  
-    if(z1==k||z2==k||z3==k||z4==k||z5==k||z6==k||z7==k||z8==k||z9==k||z10==k||z11==k||z12==k||z13==k||z14==k||z15==k||z16==k||z17==k){
-      let div = document.querySelector('div#result');
-
-      let pi00 = document.createElement('p');
-      pi00.textContent = 'グルメ情報（検索結果は'+data.results.shop.length+'件）';
-      div.insertAdjacentElement('beforeend',pi00);
-
-      for(let i=0;i<data.results.shop.length;i=i+1){  
-
-        let pi01 = document.createElement('li');
-        pi01.textContent = '・検索結果'+(i+1)+'件目';
-        pi01.style.backgroundColor='#b8e0ff';
-        div.insertAdjacentElement('beforeend',pi01);
-
-        let pi0 = document.createElement('li');
-        pi0.textContent = '　・名前:'+data.results.shop[i].name;
-        pi0.style.fontStyle='italic';
-        pi0.style.backgroundColor='skyblue';
-        div.insertAdjacentElement('beforeend',pi0);
-
-        let pi1 = document.createElement('li');
-        pi1.textContent = '　・アクセス:'+data.results.shop[i].access;
-        pi1.style.fontStyle='italic';
-        pi1.style.backgroundColor='skyblue';
-        div.insertAdjacentElement('beforeend',pi1);
-
-        let pi2 = document.createElement('li');
-        pi2.textContent = '　・住所:'+data.results.shop[i].address;
-        pi2.style.fontStyle='italic';
-        pi2.style.backgroundColor='skyblue';
-        div.insertAdjacentElement('beforeend',pi2);
-
-        let pi3 = document.createElement('li');
-        pi3.textContent = '　・予算:'+data.results.shop[i].budget.name;
-        pi3.style.fontStyle='italic';
-        pi3.style.backgroundColor='skyblue';
-        div.insertAdjacentElement('beforeend',pi3);
-
-        let pi4 = document.createElement('li');
-        pi4.textContent = '　・キャッチコピー:'+data.results.shop[i].catch;
-        pi4.style.fontStyle='italic';
-        pi4.style.backgroundColor='skyblue';
-        pi4.style.fontWeight='bold';
-        div.insertAdjacentElement('beforeend',pi4);
-
-        let pi5 = document.createElement('li');
-        pi5.textContent = '　・ジャンル:'+data.results.shop[i].genre.name;
-        pi5.style.fontStyle='italic';
-        pi5.style.backgroundColor='skyblue';
-        div.insertAdjacentElement('beforeend',pi5);
-
-        let pi6 = document.createElement('li');
-        pi6.textContent = '　・営業時間:'+data.results.shop[i].open;
-        pi6.style.fontStyle='italic';
-        pi6.style.backgroundColor='skyblue';
-        div.insertAdjacentElement('beforeend',pi6);
-
-        let pi7 = document.createElement('li');
-        pi7.textContent = '　・最寄駅:'+data.results.shop[i].station_name;
-        pi7.style.fontStyle='italic';
-        pi7.style.backgroundColor='skyblue';
-        div.insertAdjacentElement('beforeend',pi7);
-
-        let pi8 = document.createElement('li');
-        pi8.textContent = '';
-        div.insertAdjacentElement('beforeend',pi8);
-      }
-    } 
+  } 
 
 }
 
@@ -196,12 +197,6 @@ function sendRequest() {
     } else if(z17==k){
       genre = 'G017';
       url = "https://www.nishita-lab.org/web-contents/jsons/hotpepper/"+genre+".json";
-    } else {
-      let div = document.querySelector('div#result');
-      let p = document.createElement('p');
-      p.textContent='他のワードを検索してください';
-      p.style.fontSize='bold';
-      div.insertAdjacentElement('beforeend',p);
     }
 
     // 通信開始
